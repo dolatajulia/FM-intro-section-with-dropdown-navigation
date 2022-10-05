@@ -1,0 +1,156 @@
+:root {
+    --bg-color: hsl(0, 0%, 98%);
+
+    --fc-regular: hsl(0, 0%, 41%);
+    --fc-heading: hsl(0, 0%, 8%);
+
+    --fs-small: 0.8rem;
+    --fs-regular: 1.125rem;
+    --fs-heading: 6rem;
+
+    --ff: 'Epilogue', sans-serif;
+
+    --fw-regular: 500;
+    --fw-bold: 700;
+}
+
+* {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* Text */
+
+h1 {
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-bold);
+    color: var(--fc-heading);
+    margin-bottom: 3rem;
+}
+
+p {
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-regular);
+    color: var(--fc-regular);
+    margin-bottom: 3rem;
+    line-height: 1.7rem;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    margin: 1rem 3rem;
+}
+
+#left-nav {
+    display: flex;
+    align-items: center;
+    
+}
+
+.btn-1 {
+    color: var(--fc-regular);
+    border: none;
+    background-color: transparent;
+    padding: 0 1.4rem;
+    transition: 0.2s;
+}
+
+.btn-1:hover {
+    color: var(--fc-heading);
+    cursor: pointer;
+}
+
+.btn-2 {
+    color: var(--fc-regular);
+    background-color: var(--bg-color);
+    padding: 1rem 1.4rem;
+    border: solid 1px var(--fc-regular);
+    border-radius: 15px;
+    width: fit-content;
+    transition: 0.2s;
+}
+
+.btn-2:hover {
+    color: var(--fc-heading);
+    border: solid 1px var(--fc-heading);
+    cursor: pointer;
+}
+
+#logo {
+    margin-right: 3rem;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#left-box {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0;
+}
+
+#text p {
+    width: 70%;
+}
+
+.black-btn {
+    color: #fff;
+    background-color: var(--fc-heading);
+    padding: 1rem 1.4rem;
+    border: none;
+    border-radius: 15px;
+    width: fit-content;
+    transition: 0.2s;
+}
+
+.black-btn:hover {
+    background-color: var(--bg-color);
+    color: var(--fc-heading);
+    border: solid 1px var(--fc-heading);
+    cursor: pointer;
+}
+
+#clients {
+   display: flex;
+   justify-content: space-between;
+}
+
+.clients-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#right-box {
+    width: 30%;
+    display: flex;
+    
+}
+
+#right-box img {
+    width: 100%;
+   
+}
