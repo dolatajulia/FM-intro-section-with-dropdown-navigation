@@ -64,6 +64,7 @@ nav {
     background-color: transparent;
     padding: 0 1.4rem;
     transition: 0.2s;
+    height: 3rem;
 }
 
 .btn-1:hover {
@@ -166,15 +167,13 @@ main {
     background-color: #fff;
     padding: 1.5rem;
     left: 0;
-    top: calc(100% + 1rem);
+    /*top: calc(100% + 1rem);*/
     width: 100%;
     border-radius: 0.5rem;
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-    pointer-events: none;
+    display: none;
 }
+
 
 /* Testowanie 
 
@@ -207,4 +206,10 @@ main {
     padding-right: 0.5rem;
     align-items: center;
     justify-content: center;
+}
+
+.dropdown .btn-1:focus + .dropdown-menu,
+.dropdown .btn-1:hover + .dropdown-menu,
+.dropdown .dropdown-menu:hover {
+    display: block;
 }
