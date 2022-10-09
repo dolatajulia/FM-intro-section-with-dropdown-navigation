@@ -8,14 +8,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
     <title>Intro section with dropdown navigation</title>
 </head>
 <body>
     <nav>
         <div id="left-nav">
             <img id='logo' alt="snap logo" src="resources\images\logo.svg">
-            <button class="btn-1">Features <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg></button>
-            <button class="btn-1">Company <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg></button>
+            <div class="dropdown">
+                <button class="btn-1">Features <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg></button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li>
+                            <div class="dropdown-icon">
+                                <img src="resources\images\icon-todo.svg">
+                            </div>
+                            Todo List</li>
+                        <li>
+                            <div class="dropdown-icon">
+                                <img src='resources\images\icon-calendar.svg'>
+                            </div>
+                            Calendar</li>
+                        <li>
+                            <div class="dropdown-icon">
+                                <img src="resources\images\icon-reminders.svg">
+                            </div>
+                            Reminders</li>
+                        <li>
+                            <div class='dropdown-icon'>
+                                <img src="resources\images\icon-planning.svg">
+                            </div>
+                            Planning</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn-1">Company <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg></button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li>History</li>
+                        <li>Our Team</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+            </div>
             <button class="btn-1">Careers</button>
             <button class="btn-1">About</button>
         </div>

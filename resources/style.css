@@ -120,7 +120,7 @@ main {
     color: #fff;
     background-color: var(--fc-heading);
     padding: 1rem 1.4rem;
-    border: none;
+    border: solid 1px var(--fc-heading);
     border-radius: 15px;
     width: fit-content;
     transition: 0.2s;
@@ -153,4 +153,58 @@ main {
 #right-box img {
     width: 100%;
    
+}
+
+/* Dropdown buttons */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    padding: 1.5rem;
+    left: 0;
+    top: calc(100% + 1rem);
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    pointer-events: none;
+}
+
+/* Testowanie 
+
+.dropdown > .btn-1:focus + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+ Testowanie */
+
+.dropdown-menu ul {
+    list-style-type: none;
+    color: var(--fc-regular);
+    line-height: 1.9rem;
+}
+
+.dropdown-menu li {
+    display: flex;
+}
+
+.dropdown-menu li:hover {
+    color: var(--fc-heading);
+    cursor: pointer;
+}
+
+.dropdown-icon {
+    display: flex;
+    width: 30px;
+    padding-right: 0.5rem;
+    align-items: center;
+    justify-content: center;
 }
