@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1440, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="resources\style.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,9 +12,10 @@
     <title>Intro section with dropdown navigation</title>
 </head>
 <body>
-    <nav>
+    <nav id="nav">
+        <img id='icon-close-mobile' src="resources\images\icon-close-menu.svg">
         <div id="left-nav">
-            <img id='logo' alt="snap logo" src="resources\images\logo.svg">
+            <img id='logo-desktop' alt="snap logo" src="resources\images\logo.svg">
             <div class="dropdown">
                 <button id='features-btn' class="btn-1">Features <svg id='features-arrow-down' width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path   stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg><svg id='features-arrow-up' width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path id='features-arrow-up-col' stroke="#686868" stroke-width="1.5" fill="none" d="m1 5 4-4 4 4"/></svg></button>
                 <div class="dropdown-menu" id="features-dropdown">
@@ -60,10 +61,15 @@
             <button class="btn-2">Register</button>
         </div>
     </nav>
+    <div id="mobile-nav-closed">
+        <img id='logo-mobile' alt="snap logo" src="resources\images\logo.svg">
+        <img id="hamburger-menu" src="resources\images\icon-menu.svg">
+    </div>
     <main>
         <div id="left-box">
             <div id="text">
-                <h1>Make<br>remote work</h1>
+                <img id='mobile-img' src="resources\images\image-hero-mobile.png">
+                <h1>Make <br>remote work</h1>
                 <p>Get your team in sync, no matter your location. Streamline process, create team rituals, and watch productivity soar.</p>
                 <button class="black-btn">Learn more</button>
             </div>
@@ -86,5 +92,6 @@
             <img alt="abstract graphic" src="resources\images\image-hero-desktop.png">
         </div>
     </main>
+    <div id="dark-bckg"></div>
 </body>
 </html>
